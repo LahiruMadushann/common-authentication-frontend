@@ -1,0 +1,47 @@
+.space_around {
+    margin: 1rem;
+}
+.space_side_large {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.space_vertical_middle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.space_large {
+    margin:3rem;
+}
+.space_large_v2 {
+    margin-left: 2.2rem;
+}
+.space_around_middle {
+    margin: .5rem;
+}
+.space_around_small {
+    margin: .25rem;
+}
+.space_left {
+    margin-left: 4rem;
+    &.small {
+        margin-left: 1rem;
+    }
+
+}
+.space_right {
+    margin-right : 4rem;
+}
+
+.space_right_narrow {
+    margin-right : 1rem;
+}
+.space_y {
+    margin-top: 3rem;
+}
+.spacer {
+    padding: 3rem;
+}
+.space_y_xs {
+    margin-top : .5rem;
+    margin-bottom : .5rem;
+}

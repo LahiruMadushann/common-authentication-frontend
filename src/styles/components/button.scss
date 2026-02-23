@@ -1,0 +1,81 @@
+@use "../core";
+.button_wrapper {
+    display: flex;
+    height: auto;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    .pad {
+        flex-grow: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    button {
+        flex-grow: initial;
+        width: 150px;
+        height: auto;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+        :active{
+            -webkit-transform: translate(0,2px);
+            -moz-transform: translate(0,2px);
+            transform: translate(0,2px);
+        }
+    .circle {
+        width : 56px;
+        height: 56px;
+        margin : 1rem;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+    }
+    .h-30 {
+        height: 30px;
+    }
+    .long {
+        width: 200px;
+    }
+    .middle {
+        width: 110px;
+    }
+    .small {
+        width: 75px;
+    }
+    .small2 {
+        width: 60px;
+    }
+    .xs {
+        width : 50px;
+    }
+    .main.on{ background: core.$corp_main_color; }
+    .main.off{ border: solid 3px core.$corp_main_color; color: core.$corp_main_color; background: core.$white;}
+    .mainNew.on{ background: core.$corp_main_color; }
+    .sub.on{ background: core.$corp_sub_color; }
+    .sub.off{ border: solid 3px core.$corp_sub_color; color: core.$corp_sub_color; background: core.$white;}
+    .blue.on{ background: core.$blue; }
+    .blue.off{ border: solid 3px core.$blue; color: core.$blue; background: core.$white;}
+    .shop-reject.on {
+        background: core.$red;
+    }
+
+    .shop-reject.off {
+            border: solid 3px core.$blue;
+            color: core.$blue;
+            background: core.$white;
+        }
+    .red.on{ background: core.$red; }
+    .red.off{ border: solid 3px core.$red; color: core.$red; background: core.$white;}
+    .yellow.on{ background: core.$yellow; }
+    .yellow.off{ border: solid 3px core.$yellow; color: core.$yellow; background: core.$white;}
+    .gray.on{ background: core.$gray; }
+    .gray.off{ border: solid 3px core.$gray; color: core.$gray; background: core.$white;}
+    .black.on{ background: core.$black; }
+    .black.off{ border: solid 3px core.$black; color: core.$black; background: core.$white;}
+    .dark_blue.on{ background: core.$dark_blue; }
+    .dark_blue.off{ border: solid 3px core.$dark_blue; color: core.$dark_blue; background: core.$white;}
+
+}

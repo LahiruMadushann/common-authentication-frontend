@@ -1,0 +1,134 @@
+@import './layouts/login.scss';
+@import './components/table.scss';
+
+.sss {
+  background-color: #08679a;
+}
+
+.invoice-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f2f2f2;
+}
+
+.invoice-table tfoot td {
+  font-weight: bold;
+}
+
+.invoice-container-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-amount-table{
+  flex: 0.5;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.total-amount-table table{
+  width: 75%;
+}
+
+.transfer-table {
+  flex: 1;
+  text-align: center;
+}
+
+.header-invoice-section{
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+}
+
+.sub-invoice-section-1 {
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.sub-invoice-section-2 {
+  flex: 1;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+.sub-invoice-section-2 img{
+ margin-bottom: 8px;
+}
+
+.invoice-table-header{
+  background-color: #FFF9F3 !important;
+  text-align: center !important;
+}
+
+.invoice-table-body{
+  background-color: #ffffff !important;
+  text-align: center !important;
+}
+
+.sub-invoice-section-2-details{
+  text-align: left;
+  margin-left: 105px;
+}
+
+.notranslate {
+  translate: no;
+}
+
+.text-heading{
+    background-color: #597C95;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.panel-card{
+    padding: 3%;
+}
+
+.panel-card-grid{
+    padding: 2%; 
+}
+
+.ctn-wrapper .MuiButton-contained{
+    background: #fe5b02;
+}
+
+.ctn-wrapper .MuiButton-contained:hover{
+    background: #e85100;
+}
+
+.popup-status{
+    border: 1px solid #666666;
+    padding: 10px;
+}
+
+.details-appraisals-btn{
+    background-color: #526db7 !important;
+}
+
+.not-reject-appraisals-btn{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.reject-table-btn {
+    background-color: #ff355a !important;
+}

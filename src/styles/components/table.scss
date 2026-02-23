@@ -1,0 +1,158 @@
+@use "../core";
+.table-container {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 100%; // Set the desired fixed width for the table container
+  overflow:hidden;
+}
+
+.table-main-section{
+  max-height: 600px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.table {
+  width:100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  min-width: 500px; // Set a minimum width to ensure columns are readable
+  thead {
+    tr {
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #d7d5d5;
+      th {
+        min-width: 200px;
+        padding: 16px 16px;
+        text-align: left;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+    border-bottom: 1px solid #d7d5d5;
+    background-color: #f9f9f9;
+    //   &:nth-of-type(odd) {
+    //     background-color: #fafafa;
+    //   }
+      &:hover {
+        background-color: #f1f1f1;
+      }
+      td {
+        padding: 20px 16px;
+      }
+    }
+  }
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+
+  button {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+    &:hover:not(:disabled) {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .page-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    input {
+      width: 50px;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+    }
+  }
+
+  select {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+
+.table-row-clickable-item {
+  color: blue;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+/* Set the width and color of the scrollbar track */
+.material-react-table-body {
+  ::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  /* Set the color of the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fe5b02;
+  }
+
+  /* Set the color of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  /* Set the corner radius of the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+}
+
+.table-group-by {
+  td {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .table-group-by-cell {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+.mui-table-row-cell {
+  td {
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.appraisals-table {
+  th, td {
+      border: 1px solid rgba(224, 224, 224, 1) !important;
+    }
+}
+
+.appraisals-table {
+  .striped-row:nth-of-type(odd) {
+    background-color: #f6f6f6 !important; // Light grey color for odd rows
+  }
+  .striped-row:nth-of-type(even) {
+    background-color: #ffffff !important; // White color for even rows
+  }
+}

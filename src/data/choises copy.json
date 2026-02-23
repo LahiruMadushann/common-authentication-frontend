@@ -1,0 +1,218 @@
+{
+  "body_color" : [
+    { "id": "body_color", "value": "(指定なし)", "label": "", "color": "main" },
+    { "id": "body_color", "value": "ホワイト", "label": "ホワイト", "color": "main" },
+    { "id": "body_color", "value": "ブラック", "label": "ブラック", "color": "main" },
+    { "id": "body_color", "value": "シルバー", "label": "シルバー", "color": "main" },
+    { "id": "body_color", "value": "レッド", "label": "レッド", "color": "main" },
+    { "id": "body_color", "value": "オレンジ", "label": "オレンジ", "color": "main" },
+    { "id": "body_color", "value": "グリーン", "label": "グリーン", "color": "main" },
+    { "id": "body_color", "value": "ブルー", "label": "ブルー", "color": "main" },
+    { "id": "body_color", "value": "ブラウン", "label": "ブラウン", "color": "main" },
+    { "id": "body_color", "value": "イエロー", "label": "イエロー", "color": "main" },
+    { "id": "body_color", "value": "ピンク", "label": "ピンク", "color": "main" },
+    { "id": "body_color", "value": "パール", "label": "パール", "color": "main" },
+    { "id": "body_color", "value": "パープル", "label": "パープル", "color": "main" },
+    { "id": "body_color", "value": "ゴールド", "label": "ゴールド", "color": "main" },
+    { "id": "body_color", "value": "グレー", "label": "グレー", "color": "main" },
+    { "id": "body_color", "value": "不明", "label": "不明", "color": "main" }
+  ],
+  "appraisal_type": [
+    { "id": "appraisal_type", "value": "SEO", "label": "SEO", "color": "black" },
+    { "id": "appraisal_type", "value": "Paid", "label": "Paid", "color": "black" },
+    { "id": "appraisal_type", "value": "Paid2", "label": "Paid2", "color": "black" },
+    { "id": "appraisal_type", "value": "Paid3", "label": "Paid3", "color": "black" },
+    { "id": "appraisal_type", "value": "Phone", "label": "架電依頼", "color": "black" },
+    { "id": "appraisal_type", "value": "Paid4", "label": "Paid4", "color": "black" }
+  ],
+  "status": [
+    { "id": "status", "value": "unsupported", "label": "未対応", "color": "red" },
+    { "id": "status", "value": "processing", "label": "対応中", "color": "yellow" },
+    { "id": "status", "value": "appointment", "label": "アポ確定", "color": "blue" },
+    { "id": "status", "value": "closed", "label": "未対応", "color": "red" },
+    { "id": "status", "value": "scheduled", "label": "メール送信予約済み", "color": "light_purple" },
+    { "id": "status", "value": "unsent", "label": "未送客", "color": "purple" },
+    { "id": "status", "value": "deleted", "label": "削除", "color": "black" },
+    { "id": "status", "value": "submit_an_application", "label": "却下申請棄却", "color": "green" },
+    { "id": "status", "value": "recognition_applied", "label": "却下申請中", "color": "green" },
+    { "id": "status", "value": "recognition_not_accepted", "label": "却下申請承認", "color": "green" }
+  ],
+  "statusAppraisal": [
+    { "id": "status", "value": "unsupported", "label": "未対応", "color": "red" },
+    { "id": "status", "value": "processing", "label": "対応中", "color": "yellow" },
+    { "id": "status", "value": "appointment", "label": "アポ確定", "color": "blue" },
+    { "id": "status", "value": "closed", "label": "未対応", "color": "red" },
+    { "id": "status", "value": "scheduled", "label": "メール送信予約済み", "color": "light_purple" },
+    { "id": "status", "value": "unsent", "label": "未送客", "color": "purple" },
+    { "id": "status", "value": "deleted", "label": "削除", "color": "black" }
+  ],
+  "inspect_remain": [
+    { "id": "inspect_remain", "value": "3ヵ月以内", "label": "3ヵ月以内", "color": "main" },
+    { "id": "inspect_remain", "value": "6ヵ月以内", "label": "6ヵ月以内", "color": "main" },
+    { "id": "inspect_remain", "value": "1年以内", "label": "1年以内", "color": "main" },
+    { "id": "inspect_remain", "value": "1年以上", "label": "1年以上", "color": "main" },
+    { "id": "inspect_remain", "value": "不明", "label": "不明", "color": "main" }
+  ],
+  "car_state": [
+    { "id": "car_state", "value": "事故車ではない", "label": "事故車ではない", "color": "main" },
+    { "id": "car_state", "value": "事故車(水害含む)", "label": "事故車(水害含む)", "color": "gray" }  
+  ],
+  "runnable": [
+    { "id": "runnable", "value": "走行可", "label": "走行可", "color": "main" },
+    { "id": "runnable", "value": "走行不可", "label": "走行不可", "color": "gray" }
+  ],
+  "wheel_drive": [
+    { "id": "wheel_drive", "value": "2WD", "label": "2WD", "color": "main" },
+    { "id": "wheel_drive", "value": "4WD", "label": "4WD", "color": "gray" }
+  ],
+  "fuel": [
+    { "id": "fuel", "value": "ガソリン", "label": "ガソリン", "color": "main" },
+    { "id": "fuel", "value": "ディーゼル", "label": "ディーゼル", "color": "main" },
+    { "id": "fuel", "value": "ハイブリッド", "label": "ハイブリッド", "color": "main" },
+    { "id": "fuel", "value": "電気自動車", "label": "電気自動車", "color": "main" }
+  ],
+  "shift": [
+    { "id": "shift", "value": "AT", "label": "AT", "color": "main" },
+    { "id": "shift", "value": "MT", "label": "MT", "color": "main" },
+    { "id": "shift", "value": "不明", "label": "不明", "color": "gray" }
+  ],
+  "accident": [
+    { "id": "accident", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "accident", "value": "あり(修復済)", "label": "あり(修復済)", "color": "main" },
+    { "id": "accident", "value": "あり(未修理)", "label": "あり(未修理)", "color": "main" },
+    { "id": "accident", "value": "なし", "label": "なし", "color": "main" },
+    { "id": "accident", "value": "不明", "label": "不明", "color": "gray" }
+  ],
+  "exterior": [
+    { "id": "exterior", "value": "きれい", "label": "きれい", "color": "main" },
+    { "id": "exterior", "value": "目立つものなし", "label": "目立つものなし", "color": "main" },
+    { "id": "exterior", "value": "年式相応", "label": "年式相応", "color": "main" },
+    { "id": "exterior", "value": "年式以上に劣化", "label": "年式以上に劣化", "color": "main" },
+    { "id": "exterior", "value": "目立つものあり", "label": "目立つものあり", "color": "main" }
+  ],
+  "scratch": [
+    { "id": "scratch", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "scratch", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "dent": [
+    { "id": "dent", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "dent", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "peel": [
+    { "id": "peel", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "peel", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "rust": [
+    { "id": "rust", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "rust", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "interior": [
+    { "id": "interior", "value": "きれい", "label": "きれい", "color": "main" },
+    { "id": "interior", "value": "目立つものなし", "label": "目立つものなし", "color": "main" },
+    { "id": "interior", "value": "年式相応", "label": "年式相応", "color": "main" },
+    { "id": "interior", "value": "年式以上に劣化", "label": "年式以上に劣化", "color": "main" },
+    { "id": "interior", "value": "目立つものあり", "label": "目立つものあり", "color": "main" }
+  ],
+  "dirt": [
+    { "id": "dirt", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "dirt", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "tear": [
+    { "id": "tear", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "tear", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "air_conditioning": [
+    { "id": "air_conditioning", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "air_conditioning", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "smoke": [
+    { "id": "smoke", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "smoke", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "navigation": [
+    { "id": "navigation", "value": "純正品", "label": "純正品", "color": "main" },
+    { "id": "navigation", "value": "社外品", "label": "社外品", "color": "main" },
+    { "id": "navigation", "value": "無し", "label": "無し", "color": "main" }
+  ],
+  "auto_slide": [
+    { "id": "auto_slide", "value": "片側", "label": "片側", "color": "main" },
+    { "id": "auto_slide", "value": "両側", "label": "両側", "color": "main" },
+    { "id": "auto_slide", "value": "無し", "label": "無し", "color": "main" }
+  ],
+  "leather_sheet": [
+    { "id": "leather_sheet", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "leather_sheet", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "handle_type": [
+    { "id": "handle_type", "value": "左", "label": "左", "color": "main" },
+    { "id": "handle_type", "value": "右", "label": "右", "color": "main" }
+  ],
+  "back_monitor": [
+    { "id": "back_monitor", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "back_monitor", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "sunroof": [
+    { "id": "sunroof", "value": "あり", "label": "あり", "color": "main" },
+    { "id": "sunroof", "value": "無し", "label": "無し", "color": "gray" }
+  ],
+  "wheel": [
+    { "id": "wheel", "value": "スチール", "label": "スチール", "color": "main" },
+    { "id": "wheel", "value": "アルミ", "label": "アルミ", "color": "main" }
+  ],
+  "desire_date": [
+    { "id": "desire_date", "value": "(指定なし)", "label": "(指定なし)", "color": "main" },
+    { "id": "desire_date", "value": "1ヵ月以内", "label": "1ヵ月以内", "color": "main" },
+    { "id": "desire_date", "value": "2ヵ月以内", "label": "2ヵ月以内", "color": "main" },
+    { "id": "desire_date", "value": "未定", "label": "未定", "color": "main" }
+  ],
+  "prefecture": [
+    { "id" : "prefecture", "value": "（指定なし）", "label": "" },
+    { "id" : "prefecture", "value": "北海道", "label": "北海道" },
+    { "id" : "prefecture", "value": "青森県", "label": "青森県" },
+    { "id" : "prefecture", "value": "岩手県", "label": "岩手県" },
+    { "id" : "prefecture", "value": "宮城県", "label": "宮城県" },
+    { "id" : "prefecture", "value": "秋田県", "label": "秋田県" },
+    { "id" : "prefecture", "value": "山形県", "label": "山形県" },
+    { "id" : "prefecture", "value": "福島県", "label": "福島県" },
+    { "id" : "prefecture", "value": "茨城県", "label": "茨城県" },
+    { "id" : "prefecture", "value": "栃木県", "label": "栃木県" },
+    { "id" : "prefecture", "value": "群馬県", "label": "群馬県" },
+    { "id" : "prefecture", "value": "埼玉県", "label": "埼玉県" },
+    { "id" : "prefecture", "value": "千葉県", "label": "千葉県" },
+    { "id" : "prefecture", "value": "東京都", "label": "東京都" },
+    { "id" : "prefecture", "value": "神奈川県", "label": "神奈川県" },
+    { "id" : "prefecture", "value": "新潟県", "label": "新潟県" },
+    { "id" : "prefecture", "value": "富山県", "label": "富山県" },
+    { "id" : "prefecture", "value": "石川県", "label": "石川県" },
+    { "id" : "prefecture", "value": "福井県", "label": "福井県" },
+    { "id" : "prefecture", "value": "山梨県", "label": "山梨県" },
+    { "id" : "prefecture", "value": "長野県", "label": "長野県" },
+    { "id" : "prefecture", "value": "岐阜県", "label": "岐阜県" },
+    { "id" : "prefecture", "value": "静岡県", "label": "静岡県" },
+    { "id" : "prefecture", "value": "愛知県", "label": "愛知県" },
+    { "id" : "prefecture", "value": "三重県", "label": "三重県" },
+    { "id" : "prefecture", "value": "滋賀県", "label": "滋賀県" },
+    { "id" : "prefecture", "value": "京都府", "label": "京都府" },
+    { "id" : "prefecture", "value": "大阪府", "label": "大阪府" },
+    { "id" : "prefecture", "value": "兵庫県", "label": "兵庫県" },
+    { "id" : "prefecture", "value": "奈良県", "label": "奈良県" },
+    { "id" : "prefecture", "value": "和歌山県", "label": "和歌山県" },
+    { "id" : "prefecture", "value": "鳥取県", "label": "鳥取県" },
+    { "id" : "prefecture", "value": "島根県", "label": "島根県" },
+    { "id" : "prefecture", "value": "岡山県", "label": "岡山県" },
+    { "id" : "prefecture", "value": "広島県", "label": "広島県" },
+    { "id" : "prefecture", "value": "山口県", "label": "山口県" },
+    { "id" : "prefecture", "value": "徳島県", "label": "徳島県" },
+    { "id" : "prefecture", "value": "香川県", "label": "香川県" },
+    { "id" : "prefecture", "value": "愛媛県", "label": "愛媛県" },
+    { "id" : "prefecture", "value": "高知県", "label": "高知県" },
+    { "id" : "prefecture", "value": "福岡県", "label": "福岡県" },
+    { "id" : "prefecture", "value": "佐賀県", "label": "佐賀県" },
+    { "id" : "prefecture", "value": "長崎県", "label": "長崎県" },
+    { "id" : "prefecture", "value": "熊本県", "label": "熊本県" },
+    { "id" : "prefecture", "value": "大分県", "label": "大分県" },
+    { "id" : "prefecture", "value": "宮崎県", "label": "宮崎県" },
+    { "id" : "prefecture", "value": "鹿児島県", "label": "鹿児島県" },
+    { "id" : "prefecture", "value": "沖縄県", "label": "沖縄県" }
+  ]
+}

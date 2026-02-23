@@ -1,0 +1,107 @@
+[
+  {
+    "billingYearMonth": "2024-01",
+    "noOfReferrals": 10,
+    "rejectionInMonthEx": 2,
+    "amount": 5000,
+    "paymentDeadline": "2024-02-15"
+  },
+  {
+    "billingYearMonth": "2024-02",
+    "noOfReferrals": 15,
+    "rejectionInMonthEx": 1,
+    "amount": 7500,
+    "paymentDeadline": "2024-03-15"
+  },
+  {
+    "billingYearMonth": "2024-03",
+    "noOfReferrals": 20,
+    "rejectionInMonthEx": 3,
+    "amount": 10000,
+    "paymentDeadline": "2024-04-15"
+  },
+  {
+    "billingYearMonth": "2024-04",
+    "noOfReferrals": 25,
+    "rejectionInMonthEx": 0,
+    "amount": 12500,
+    "paymentDeadline": "2024-05-15"
+  },
+  {
+    "billingYearMonth": "2024-05",
+    "noOfReferrals": 30,
+    "rejectionInMonthEx": 4,
+    "amount": 15000,
+    "paymentDeadline": "2024-06-15"
+  },
+  {
+    "billingYearMonth": "2024-06",
+    "noOfReferrals": 35,
+    "rejectionInMonthEx": 2,
+    "amount": 17500,
+    "paymentDeadline": "2024-07-15"
+  },
+  {
+    "billingYearMonth": "2024-07",
+    "noOfReferrals": 40,
+    "rejectionInMonthEx": 1,
+    "amount": 20000,
+    "paymentDeadline": "2024-08-15"
+  },
+  {
+    "billingYearMonth": "2024-08",
+    "noOfReferrals": 45,
+    "rejectionInMonthEx": 3,
+    "amount": 22500,
+    "paymentDeadline": "2024-09-15"
+  },
+  {
+    "billingYearMonth": "2024-09",
+    "noOfReferrals": 50,
+    "rejectionInMonthEx": 5,
+    "amount": 25000,
+    "paymentDeadline": "2024-10-15"
+  },
+  {
+    "billingYearMonth": "2024-10",
+    "noOfReferrals": 55,
+    "rejectionInMonthEx": 2,
+    "amount": 27500,
+    "paymentDeadline": "2024-11-15"
+  },
+  {
+    "billingYearMonth": "2024-11",
+    "noOfReferrals": 60,
+    "rejectionInMonthEx": 4,
+    "amount": 30000,
+    "paymentDeadline": "2024-12-15"
+  },
+  {
+    "billingYearMonth": "2024-12",
+    "noOfReferrals": 65,
+    "rejectionInMonthEx": 1,
+    "amount": 32500,
+    "paymentDeadline": "2025-01-15"
+  },
+  {
+    "billingYearMonth": "2025-01",
+    "noOfReferrals": 70,
+    "rejectionInMonthEx": 3,
+    "amount": 35000,
+    "paymentDeadline": "2025-02-15"
+  },
+  {
+    "billingYearMonth": "2025-02",
+    "noOfReferrals": 75,
+    "rejectionInMonthEx": 2,
+    "amount": 37500,
+    "paymentDeadline": "2025-03-15"
+  },
+  {
+    "billingYearMonth": "2025-03",
+    "noOfReferrals": 80,
+    "rejectionInMonthEx": 0,
+    "amount": 40000,
+    "paymentDeadline": "2025-04-15"
+  }
+]

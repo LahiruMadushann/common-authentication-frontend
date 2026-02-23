@@ -1,0 +1,42 @@
+interface ShopDataType {
+  id: number;
+  companyName: string;
+  name: string;
+  phoneNumber:number;
+  shopHolidays: string[];
+  shopVacations: string[];
+  postalCode: string;
+  prefectures: string;
+  manicipalities: string;
+  address: string;
+  businessHours: string;
+  appealStatement: string;  
+  shopImageUrl: string;
+  shopTypeEnum: 'HEAD_BRANCH' | 'OTHER_BRANCH' | string;
+  countAssessedEx: number;
+  countAssessedNonEx: number;
+  totalNumberOfGuest: number;
+  rejectionInMonthEx: number;
+  rejectionInMonthNonEx: number;
+  totalNumberRejection: number;
+  rejectionInLastMonthEx: number;
+  rejectionInLastMonthNonEx: number;
+  totalNumberRejectionInLastMonth: number;
+  cancellationInLastMonthEx: number;
+  cancellationInLastMonthNonEx: number;
+  totalNumberCancellationInLastMonth: number;
+  exclusiveAmount: number;
+  nonExclusiveAmount: number;
+  amount: number;
+  ex: 'EX' | 'NON_EX';
+  paymentMethod: 'BILLING' | 'DEBIT' | 'OTHER' | string;
+  referral: number;
+  introduction: number;
+  billingStatus: 'BILLED' | 'UNBILLED' | 'PARTIALLY_BILLED' | string;
+  year: number;
+  month: number;
+  japaneeseMonth: string;
+  shopuserid: number;
+}
+
+export type { ShopDataType };
