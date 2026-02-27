@@ -9,7 +9,7 @@ interface ResetPasswordRequest {
 export const passwordApi = createApi({
   reducerPath: 'passwordApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.REACT_APP_ENDPOINT_V2}`,
+    baseUrl: `${process.env.REACT_APP_ENDPOINT_V1}`,
     prepareHeaders: (headers) => {
       const token = localStorage.getItem('token');
       if (token) {

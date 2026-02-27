@@ -72,7 +72,7 @@ export const {
 
 export const shopUploadApi = createApi({
   reducerPath: 'shopUploadApi',
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_ENDPOINT_V2 }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_ENDPOINT_V1 }),
   tagTypes: ['UploadShopCsv'],
   endpoints: (builder) => ({
     uploadCsv: builder.mutation<void, FormData>({

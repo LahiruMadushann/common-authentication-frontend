@@ -4,9 +4,9 @@ import axiosClient from '../../config/axiosInstance.config';
 import { AxiosError, AxiosRequestConfig } from 'axios';
 
 // JWT decoding utility function
-function decodeToken(token: string): { userId?: number } {
+function decodeToken(token: string): { userId?: number | string } {
   try {
-    const decodedPayload = jwtDecode<{ userId?: number }>(token);
+    const decodedPayload = jwtDecode<{ userId?: number | string }>(token);
     return { userId: decodedPayload.userId };
   } catch (error) {
     try {
@@ -47,6 +47,8 @@ type RefreshResponseType = {
 type AuthenticateResponseType = {
   authenticated: boolean;
   userId?: number;
+  id?: number;
+  role?: string;
 };
 
 const axiosBaseQuery =
@@ -154,12 +156,19 @@ export const authApi = createApi({
       }),
       transformResponse: (response: any) => {
         const token = localStorage.getItem('token');
-        let userId = response.id;
+        let userId = response.userId;
 
-        // Fallback for userId if needed
-        if (!userId && token) {
+        // Priority to token's userId if present
+        if (token) {
           const decoded = decodeToken(token);
-          userId = decoded.userId;
+          if (decoded.userId) {
+            userId = decoded.userId;
+          }
+        }
+
+        // Fallback logic
+        if (!userId) {
+          userId = response.id;
         }
 
         return {

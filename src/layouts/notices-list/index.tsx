@@ -21,7 +21,7 @@ const NoticesLayout = () => {
     fetchNotices({
       page: 0,
       size: 100,
-      category: 'BUYER',
+      category: 'SELLER',
     });
   }, [fetchNotices]);
 

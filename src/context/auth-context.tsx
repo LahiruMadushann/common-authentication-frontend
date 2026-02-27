@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { useLazyGetAuthenticateQuery, useLogoutMutation } from '../app/services/auth';
+import { startRefreshTimer, extractIncomingToken } from '../config/axiosInstance.config';
 
 // Define the shape of the authentication data
 interface AuthContextType {
@@ -25,10 +26,27 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   );
 
   useEffect(() => {
-    checkSession();
+    const init = async () => {
+      // Handle incoming cross-site redirect: if refresh_token is in the URL,
+      // automatically log in and mark the user authenticated (true SSO - no login needed)
+      const loggedInViaSSO = await extractIncomingToken();
+      if (loggedInViaSSO) {
+        setIsAuthenticated(true);
+        return; // session fully established — skip checkSession
+      }
+
+      // Normal load: re-arm timer if a token already exists (page refresh case)
+      const existingToken = localStorage.getItem('token');
+      if (existingToken) {
+        startRefreshTimer(existingToken);
+      }
+      checkSession();
+    };
+
+    init();
     setInterval(() => {
       checkSession();
-    }, 900000)
+    }, 900000);
   }, []);
 
   const checkSession = () => {
@@ -55,7 +73,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const logout = async () => {
     try {
-      const refreshToken = localStorage.getItem('refreshToken');
+      const refreshToken = sessionStorage.getItem('refreshToken');
       if (refreshToken) {
         await logoutApi().unwrap();
       }
@@ -63,6 +81,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       console.error("Logout failed", error);
     } finally {
       localStorage.clear();
+      sessionStorage.removeItem('refreshToken');
       setIsAuthenticated(false);
       window.location.href = '/login';
     }

@@ -171,9 +171,9 @@ const StoreList = (props: StoreListType) => {
                     <h1 className="text-[#333333] text-[18px] font-bold ">店舗名</h1>
                     <h1 className="text-[#333333] text-[18px] font-medium">{shop?.name ?? '--'}</h1>
                   </div>
-                    <p className=" text-[1.2rem] font-bold text-[#333333]">
+                  <p className=" text-[1.2rem] font-bold text-[#333333]">
                     {shop?.appealStatement ?? '--'}
-                    </p>
+                  </p>
                 </div>
                 <div className="pt-[20px] pb-[15px] flex flex-col md:flex-row justify-between gap-x-[20px] ">
                   {/* Store Image Section */}

@@ -60,7 +60,7 @@ const MessageLayout = ({ senderId, receiverId }: any) => {
 
   useEffect(() => {
     fetchMessages();
-  }, []);
+  }, [senderId, receiverId]);
 
   if (isGetError) {
     handleErrors(getError);
@@ -278,11 +278,10 @@ const MessageLayout = ({ senderId, receiverId }: any) => {
                     </span>
                   </div>
                   <div
-                    className={`chat-bubble ${
-                      message?.senderId == senderId
+                    className={`chat-bubble ${message?.senderId == senderId
                         ? 'bg-[#E5EFF1] text-gray-800'
                         : 'bg-[#FFFFFF] text-gray-800 '
-                    } p-4 rounded-lg max-w-full text-sm sm:text-base break-words drop-shadow-lg`}>
+                      } p-4 rounded-lg max-w-full text-sm sm:text-base break-words drop-shadow-lg`}>
                     {renderMessageContent(message)}
                   </div>
                 </div>

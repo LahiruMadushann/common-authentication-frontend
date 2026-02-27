@@ -11,6 +11,7 @@ import { setUserId } from '../../app/services/authSlice';
 import { useDispatch } from 'react-redux';
 import Logo from '@/src/assets/logo-top.png';
 import { useBuyerStore } from '@/src/stores/buyer.store';
+import { startRefreshTimer } from '../../config/axiosInstance.config';
 
 function LoginPage() {
   const { login } = useAuth();
@@ -83,8 +84,10 @@ function LoginPage() {
       .unwrap()
       .then((response) => {
         localStorage.setItem('token', response.access_token);
-        localStorage.setItem('refreshToken', response.refresh_token);
+        sessionStorage.setItem('refreshToken', response.refresh_token);
         localStorage.setItem('authenticated', 'true');
+        // Start the proactive refresh timer immediately after login
+        startRefreshTimer(response.access_token);
 
         // Automatically call /auth/me after login
         getMe(null).unwrap()
@@ -96,7 +99,7 @@ function LoginPage() {
             localStorage.setItem('userRole', role);
             setPageTitle(role);
 
-            const userId = meData.userId || meData.id || decodedToken.userId || decodedToken.sub || decodedToken.id;
+            const userId = decodedToken.userId || meData.userId || meData.id || decodedToken.sub || decodedToken.id;
             console.log('Logged in User ID:', userId);
 
             if (userId) {
